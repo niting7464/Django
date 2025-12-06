@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Templates basics for django</title>
+</head>
+<body>
+    <h1>Welcome to my blog</h1>
+    <p>This is my blog content</p>
+
+    <!-- single Variable -->
+     <p>Name :{{ name }}</p>
+
+     <!-- List -->
+
+     <p> Skills : {{ skills }} </p>
+
+     <!-- Object attribute access -->
+
+     <p> User name : {{ user.name }} </p>
+     <p> User age : {{ user.age }} </p>
+
+     <!-- Dict -->
+
+     <h2> blog info</h2>
+     <p> {{ blog.title }}</p>
+     <p>{{ blog.content|safe }}</p>
+     <p>{{ blog.date }}</p>
+
+    <!-- Default filter -->
+
+    <p>Empty value: {{ empty_value|default:"Default Value" }}</p>
+    
+</body>
+</html>
